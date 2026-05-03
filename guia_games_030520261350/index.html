@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Games The Last of Us</title>
+    <link rel="stylesheet" href="./styles.css">
+    </head>
+<body>
+    <main class="home_container">
+        <div class="home_back">
+            <img src="./home/capa.jpg" class="home_back_img">
+        </div>
+        <div class="home_conteudo">
+            <h1 class="home_titulo">THE LAST OF US</h1>
+            <div class="game_botoes">
+                <a href="./parte1/parte1.html" class="game_botao">
+                    <img src="./parte1/imagens/fundop1.jpg" class="home_botao_img">
+                    <div class="home_botao_overlay"></div>
+                    <div class="botao_home">
+                      
+                        <span class="game_botao-text">PARTE I</span>
+                        <span class="home_botao_ano">2013</span>
+                    </div>
+                </a>
+                <a href="./parte2/parte2.html" class="game_botao">
+                    <img src="./parte2/imagens/fundop2.jpg" class="home_botao_img">
+                    <div class="home_botao_overlay"></div>
+                    <div class="botao_home">
+                        
+                        <span class="game_botao-text">PARTE II</span>
+                        <span class="home_botao_ano">2020</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <section class="reporte">
+        <div class="reporte_container">
+            <div class="reporte_header">
+                <h2 class="titulo_reporte">ENCONTROU UM ERRO?</h2>
+            </div>
+            <form class="formulario_reporte">
+                <div class="linha_formulario">
+                    <div class="formulario_grupo">
+                        <label class="label_formulario" for="nome">SEU NOME</label>
+                        <input class="formulario_input" type="text" id="nome" placeholder="Como devemos te chamar?" required>
+                    </div>
+                    <div class="formulario_grupo">
+                        <label class="label_formulario" for="pagina">PÁGINA COM ERRO</label>
+                        <select class="formulario_input" id="pagina" required>
+                            <option value="" disabled selected>Selecione a página...</option>
+                            <option value="home">Home</option>
+                            <option value="parte1_historia">Parte I História</option>
+                            <option value="parte1_personagens">Parte I Personagens</option>
+                            <option value="parte1_arsenal">Parte I Arsenal</option>
+                            <option value="parte2_historia">Parte II História</option>
+                            <option value="parte2_personagens">Parte II Personagens</option>
+                            <option value="parte2_arsenal">Parte II Arsenal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formulario_grupo">
+                    <label class="label_formulario" for="descricao">Descrição do Erro</label>
+                    <textarea class="formulario_input form-textarea" id="descricao" placeholder="Descreva o erro encontrado." required></textarea>
+                </div>
+                <button type="submit" class="formulario_enviar">
+                    ENVIAR REPORTE
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
