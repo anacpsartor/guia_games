@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato – Guia Games</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container_pag">
+        <header class="header">
+            <div class="header_conteudo">
+                <div class="header_esq">
+                    <a href="./index.html" class="back_botao">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </a>
+                    <h1 class="header_titulo">CONTATO</h1>
+                </div>
+                <nav class="header_nav">
+                    <a href="./index.html" class="nav_botao">Home</a>
+                    <a href="./parte1/parte1.html" class="nav_botao">Parte I</a>
+                    <a href="./parte2/parte2.html" class="nav_botao">Parte II</a>
+                    <a href="./contato.html" class="nav_botao active">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="header_pag">
+            <h2 class="titulo_pagina">CONTATO</h2>
+            <p class="subtitulo_pag">Encontrou um erro? Fale com a gente!</p>
+        </div>
+
+        <main>
+            <section class="reporte">
+                <div class="reporte_container">
+                    <div class="reporte_header">
+                        <h2 class="titulo_reporte">REPORTE DE ERROS</h2>
+                    </div>
+                    <form class="formulario_reporte">
+                        <div class="linha_formulario">
+                            <div class="formulario_grupo">
+                                <label class="label_formulario" for="nome">SEU NOME</label>
+                                <input class="formulario_input" type="text" id="nome" placeholder="Como devemos te chamar?" required>
+                            </div>
+                            <div class="formulario_grupo">
+                                <label class="label_formulario" for="email">SEU E-MAIL</label>
+                                <input class="formulario_input" type="email" id="email" placeholder="seu@email.com">
+                            </div>
+                        </div>
+                        <div class="formulario_grupo">
+                            <label class="label_formulario" for="pagina">PÁGINA COM ERRO</label>
+                            <select class="formulario_input" id="pagina" required>
+                                <option value="" disabled selected>Selecione a página...</option>
+                                <option value="home">Home</option>
+                                <option value="parte1_historia">Parte I – História</option>
+                                <option value="parte1_personagens">Parte I – Personagens</option>
+                                <option value="parte1_arsenal">Parte I – Arsenal</option>
+                                <option value="parte2_historia">Parte II – História</option>
+                                <option value="parte2_personagens">Parte II – Personagens</option>
+                                <option value="parte2_arsenal">Parte II – Arsenal</option>
+                            </select>
+                        </div>
+                        <div class="formulario_grupo">
+                            <label class="label_formulario" for="descricao">DESCRIÇÃO DO ERRO</label>
+                            <textarea class="formulario_input form-textarea" id="descricao" placeholder="Descreva o erro encontrado com o máximo de detalhes possível." required></textarea>
+                        </div>
+                        <button type="submit" class="formulario_enviar">
+                            ENVIAR REPORTE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer_texto">
+                Grupo 1 - Guia Games | Ana Sartor e Ellen Matté
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
